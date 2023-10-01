@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Lemonada:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ruwudu:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+
+}
+html{
+  font-size: 10px;
+}
+body{
+  min-height: 100vh;
+  background: #081b29;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.contanier{
+  width: 100%;
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 28px;
+  margin: 30px 28px;
+  box-shadow: 0 0 20px skyblue;
+  border-radius: 12px;
+}
+.titel-form{
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 6px;
+  border-bottom: 1px solid white;
+  text-shadow: 1px 1px 12px skyblue;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.box-info{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 28px 0;
+}
+.inpot-box:nth-child(2n){
+  justify-content: end;
+}
+.inpot-box{
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+.inpot-box label{
+  width: 95%;
+  margin: 5px 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.inpot-box input{
+  outline: none;
+  border: 2px solid grey;
+  padding: 0 10px;
+  width: 95%;
+  height: 40px;
+  border-radius: 10px;
+  transition: 0.7s ease;
+}
+.inpot-box input:hover{
+  box-shadow: 0 0 10px skyblue;
+  transform: scale(1.05);
+  border: 2px solid skyblue;
+}
+.gender-titel{
+  font-size: 24px;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 15px skyblue;
+
+}
+.gender-titel-info{
+  margin: 15px 0;
+  color: white;
+}
+.gender-titel-info label:hover
+{
+  color: #0595cd;
+}
+
+
+.gender-titel-info label{
+  padding: 0 20px 0 5px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.gender-titel-info label,
+.gender-titel-info input ,
+.btn-submit input{
+  cursor: pointer;
+}
+.btn-submit{
+  margin-top: 40px;
+}
+.btn-submit input{
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background: #0595cd;
+  box-shadow: 0 0 15px skyblue;
+  text-transform: capitalize;
+  transition: 0.5s ease;
+  outline: none;
+}
+.btn-submit input:hover{
+  transform: scale(1.05);
+}
+.social-icons{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.social-icons a{
+  text-decoration: none;
+  margin: 0 30px;
+  margin-top: 13px;
+}
+
+
+.social-icons a i{
+  color: white;
+  font-size: 30px;
+  text-shadow: 0 0 12px skyblue;
+  transition: 0.7s ease;
+}
+.social-icons a i:hover{
+  color: #0595cd;
+}
+@media(max-width:600px){
+  .contanier{
+    min-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .inpot-box{
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .inpot-box:nth-child(2n){
+    justify-content: space-between;
+  }
+  .gender-titel-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  .btn-submit{
+    width: 100%;
+  }
+  .social-icons{
+    width: 100%;
+    align-items: center;
+
+  }
+
+}
